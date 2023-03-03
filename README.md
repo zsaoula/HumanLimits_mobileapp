@@ -1,4 +1,4 @@
-# Idée de projet 
+# Idées de projet 
 
 - Human benchmark -> https://humanbenchmark.com/
     - Epreuve de rapidité de réactions
