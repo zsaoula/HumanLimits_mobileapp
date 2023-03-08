@@ -13,17 +13,26 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="19">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.StartActivity"
             android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+
+        </activity>
+        <activity android:name=".activities.ReflexActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 
