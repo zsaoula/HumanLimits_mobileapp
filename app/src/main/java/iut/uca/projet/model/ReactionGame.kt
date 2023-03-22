@@ -24,6 +24,7 @@ class ReactionGame : MiniJeu{
         }
 
     }
+
     override fun start(): Int {
         // Premier chrono pour définir quand le rectangle vas changer de couleur
         var timer = object : CountDownTimer(chrono * 1000, 100)
