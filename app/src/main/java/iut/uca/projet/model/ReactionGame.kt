@@ -1,13 +1,17 @@
 package iut.uca.projet.model
 
+import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
+import android.hardware.camera2.params.MeteringRectangle
 import android.os.CountDownTimer
 import android.util.Log
+import android.widget.Button
 import kotlin.random.Random
 import kotlin.random.Random.Default.nextInt
 import kotlin.system.measureTimeMillis
 
 
-class ReactionGame : MiniJeu{
+class ReactionGame() : MiniJeu{
 
     var chrono: Long = Random.nextLong(1,10)
     var currentValue : Long = chrono
@@ -22,7 +26,6 @@ class ReactionGame : MiniJeu{
             // Soit c'est trop long (2 secondes pour réagir)
             // Soit retourne le temps de réaction
         }
-
     }
 
     override fun start(): Int {
@@ -39,6 +42,7 @@ class ReactionGame : MiniJeu{
                 {
                     // il faut changer la couleur du retangle la tous de suite
                     // C'est le chrono pour le temps de réaction
+
                     Log.d("chonor", currentValue.toString())
                     counter.start()
                 }
@@ -54,7 +58,7 @@ class ReactionGame : MiniJeu{
     }
 
     override fun stop() {
-        TODO("Not yet implemented")
+        TODO("Not implemented yet")
     }
 
 

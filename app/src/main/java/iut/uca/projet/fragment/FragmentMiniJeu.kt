@@ -19,6 +19,5 @@ class FragmentMiniJeu(val model : List<MiniJeu>) : Fragment(R.layout.fragment_co
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<RecyclerView>(R.id.minijeux_recyclerView).layoutManager = GridLayoutManager(this.context,2,GridLayoutManager.VERTICAL,false)
         view.findViewById<RecyclerView>(R.id.minijeux_recyclerView).adapter = MiniJeuAdpater(model)
-
     }
 }

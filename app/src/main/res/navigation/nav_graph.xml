@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/fragmentMiniJeu">
+    <fragment
+        android:id="@+id/fragmentMiniJeu"
+        android:name="iut.uca.projet.fragment.FragmentMiniJeu"
+        android:label="FragmentMiniJeu" >
+        <action
+            android:id="@+id/action_fragmentMiniJeu_to_fragmentReflexGame2"
+            app:destination="@id/fragmentReflexGame2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReflexGame2"
+        android:name="iut.uca.projet.fragment.FragmentReflexGame"
+        android:label="FragmentReflexGame" />
+</navigation>
