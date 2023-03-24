@@ -18,19 +18,19 @@ class MiniJeuAdpater(val jeux: List<MiniJeu>) : RecyclerView.Adapter<MiniJeuView
     override fun onBindViewHolder(holder: MiniJeuViewHolder, position: Int) {
         val miniJeu = jeux[position]
         when (jeux[position]) {
-            is BallGame -> holder.nameMiniJeu.text = "Ball Game"
+            is BallGame -> holder.buttonMiniJeu.text = "Ball Game"
+            //is BallGame -> holder.imageMiniJeu.setImageResource(R.drawable.target)
+            //holder.imageMiniJeu
+            is MemoryGame -> holder.buttonMiniJeu.text = "Memory Game"
             //holder.buttonMiniJeu
             //holder.imageMiniJeu
-            is MemoryGame -> holder.nameMiniJeu.text = "Memory Game"
+            is ReactionGame -> holder.buttonMiniJeu.text = "Reaction Game"
             //holder.buttonMiniJeu
             //holder.imageMiniJeu
-            is ReactionGame -> holder.nameMiniJeu.text = "Reaction Game"
+            is TypingGame -> holder.buttonMiniJeu.text = "Typing Game"
             //holder.buttonMiniJeu
             //holder.imageMiniJeu
-            is TypingGame -> holder.nameMiniJeu.text = "Typing Game"
-            //holder.buttonMiniJeu
-            //holder.imageMiniJeu
-            else -> holder.nameMiniJeu.text = "Nothing"
+            else -> holder.buttonMiniJeu.text = "Nothing"
         }
     }
 
