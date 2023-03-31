@@ -1,5 +1,6 @@
 package iut.uca.projet.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -12,6 +13,6 @@ class FragmentReflexGame : Fragment(R.layout.fragment_container_minijeu) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        view.setBackgroundColor(Color.RED)
     }
 }

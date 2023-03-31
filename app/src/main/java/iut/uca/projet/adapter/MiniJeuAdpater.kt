@@ -3,6 +3,7 @@ package iut.uca.projet.adapter
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import iut.uca.projet.R
 import iut.uca.projet.fragment.FragmentMiniJeu
@@ -30,7 +31,10 @@ class MiniJeuAdpater(val jeux: List<MiniJeu>) : RecyclerView.Adapter<MiniJeuView
             //holder.imageMiniJeu
             is ReactionGame -> {
                 holder.buttonMiniJeu.text = "Reaction Game"
-
+                holder.buttonMiniJeu.setOnClickListener {
+                    // Tu bind l'action de click au fragment voulu que tu ajoute dans la navigation
+                    it.findNavController().navigate(R.id.fragmentReflexGame2)
+                }
                 //holder.imageMiniJeu
             }
             is TypingGame -> {
