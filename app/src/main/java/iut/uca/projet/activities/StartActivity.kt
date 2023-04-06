@@ -18,20 +18,15 @@ import iut.uca.projet.data.Stub
 
 class StartActivity : AppCompatActivity() {
 
-    val model = Stub().load()
+    val model = Stub().load2()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         supportFragmentManager.fragmentFactory = FactoryFragment(model)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_main)
-        // supportFragmentManager.beginTransaction()
+        //supportFragmentManager.beginTransaction()
         //    .setReorderingAllowed(true)
         //    .add(R.id.fragmentContainerView,FragmentMiniJeu(model))
         //    .commit()
-
-    }
-
-    override fun onResume() {
-        super.onResume()
     }
 }

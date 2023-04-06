@@ -13,7 +13,7 @@ import iut.uca.projet.adapter.MiniJeuAdpater
 import iut.uca.projet.model.Menu
 import iut.uca.projet.model.MiniJeu
 
-class FragmentMiniJeu(val model : List<MiniJeu>) : Fragment(R.layout.fragment_container_minijeu){
+class FragmentMiniJeu(val model : List<String>) : Fragment(R.layout.fragment_container_minijeu){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
