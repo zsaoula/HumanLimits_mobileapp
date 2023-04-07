@@ -9,9 +9,16 @@
         <action
             android:id="@+id/action_fragmentMiniJeu_to_fragmentReflexGame2"
             app:destination="@id/fragmentReflexGame2" />
+        <action
+            android:id="@+id/action_fragmentMiniJeu_to_fragmentTyping"
+            app:destination="@id/fragmentTyping" />
     </fragment>
     <fragment
         android:id="@+id/fragmentReflexGame2"
         android:name="iut.uca.projet.fragment.FragmentReflexGame"
         android:label="FragmentReflexGame" />
+    <fragment
+        android:id="@+id/fragmentTyping"
+        android:name="iut.uca.projet.fragment.FragmentTyping"
+        android:label="FragmentTyping" />
 </navigation>

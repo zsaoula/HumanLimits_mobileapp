@@ -38,6 +38,9 @@ class MiniJeuAdpater(val jeux: List<String>) : RecyclerView.Adapter<MiniJeuViewH
             }
             "TypingGame" -> {
                 holder.buttonMiniJeu.text = "Typing Game"
+                holder.buttonMiniJeu.setOnClickListener {
+                    it.findNavController().navigate(R.id.fragmentTyping)
+                }
             }
             //holder.buttonMiniJeu
             //holder.imageMiniJeu
