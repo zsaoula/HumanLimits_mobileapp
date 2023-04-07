@@ -15,6 +15,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        multiDexEnabled = true
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -52,11 +53,15 @@ dependencies {
     // Feature module Support
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.5.3")
 
-    // Testing Navigation
-    androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
-
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     // Retrofit with Scalar Converter
     implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+
+    // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
+
+    implementation("androidx.multidex:multidex:2.0.1")
+
+
 }

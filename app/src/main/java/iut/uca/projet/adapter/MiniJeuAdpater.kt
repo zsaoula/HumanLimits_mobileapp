@@ -17,7 +17,6 @@ class MiniJeuAdpater(val jeux: List<String>) : RecyclerView.Adapter<MiniJeuViewH
     }
 
     override fun onBindViewHolder(holder: MiniJeuViewHolder, position: Int) {
-        val miniJeu = jeux[position]
         when (jeux[position]) {
             "BallGame" -> {
                 holder.buttonMiniJeu.text = "Ball Game"
