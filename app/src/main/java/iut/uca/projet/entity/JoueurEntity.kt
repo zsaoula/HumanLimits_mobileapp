@@ -7,8 +7,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "joueur")
 class JoueurEntity {
     @PrimaryKey(autoGenerate = true)
-    val id : Int = 0
+    var id : Int = 0
 
     @ColumnInfo(name="pseudo")
-    val pseudo : String = ""
+    var pseudo : String = ""
 }

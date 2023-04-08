@@ -7,10 +7,10 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "minijeu")
 class MiniJeuEntity() {
     @PrimaryKey(autoGenerate = true)
-    val id : Int = 0
+    var id : Int = 0
 
     @ColumnInfo(name = "nom")
-    val nom : String = ""
+    var nom : String = ""
 
 
 }
