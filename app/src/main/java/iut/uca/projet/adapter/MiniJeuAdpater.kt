@@ -25,6 +25,9 @@ class MiniJeuAdpater(val jeux: List<String>) : RecyclerView.Adapter<MiniJeuViewH
             //holder.imageMiniJeu
             "MemoryGame" -> {
                 holder.buttonMiniJeu.text = "Memory Game"
+                holder.buttonMiniJeu.setOnClickListener {
+                    it.findNavController().navigate(R.id.fragmentMemory)
+                }
             }
             //holder.buttonMiniJeu
             //holder.imageMiniJeu

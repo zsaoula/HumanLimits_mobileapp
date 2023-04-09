@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_fragmentMiniJeu_to_fragmentTyping"
             app:destination="@id/fragmentTyping" />
+        <action
+            android:id="@+id/action_fragmentMiniJeu_to_fragmentMemory"
+            app:destination="@id/fragmentMemory" />
     </fragment>
     <fragment
         android:id="@+id/fragmentReflexGame2"
@@ -21,4 +24,8 @@
         android:id="@+id/fragmentTyping"
         android:name="iut.uca.projet.fragment.FragmentTyping"
         android:label="FragmentTyping" />
+    <fragment
+        android:id="@+id/fragmentMemory"
+        android:name="iut.uca.projet.fragment.FragmentMemory"
+        android:label="FragmentMemory" />
 </navigation>
