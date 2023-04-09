@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_fragmentMiniJeu_to_fragmentMemory"
             app:destination="@id/fragmentMemory" />
+        <action
+            android:id="@+id/action_fragmentMiniJeu_to_fragmentBall"
+            app:destination="@id/fragmentBall" />
     </fragment>
     <fragment
         android:id="@+id/fragmentReflexGame2"
@@ -28,4 +31,8 @@
         android:id="@+id/fragmentMemory"
         android:name="iut.uca.projet.fragment.FragmentMemory"
         android:label="FragmentMemory" />
+    <fragment
+        android:id="@+id/fragmentBall"
+        android:name="iut.uca.projet.fragment.FragmentBall"
+        android:label="FragmentBall" />
 </navigation>

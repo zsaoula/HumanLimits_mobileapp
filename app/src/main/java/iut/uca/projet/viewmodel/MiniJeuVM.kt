@@ -7,6 +7,6 @@ import iut.uca.projet.entity.MiniJeuEntity
 import kotlinx.coroutines.flow.collect
 
 class MiniJeuVM(val DAO : DAOMiniJeu) : ViewModel() {
-    fun getMiniJeux() : LiveData<List<MiniJeuEntity>> = DAO.getMiniJeux().asLiveData()
+    fun getMiniJeux() : List<MiniJeuEntity> = DAO.getMiniJeux()
 
 }

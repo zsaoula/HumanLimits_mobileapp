@@ -86,7 +86,7 @@ class MemoryGame(var view: View) : MiniJeu {
     }
 
     private suspend fun displaySequence() {
-        delay(9000)
+        delay(900)
         for (i in sequence){
             val buttonBackground = buttons[i]?.background!!.mutate()
             DrawableCompat.setTint(buttonBackground, ContextCompat.getColor(view.context, R.color.blueBackground))

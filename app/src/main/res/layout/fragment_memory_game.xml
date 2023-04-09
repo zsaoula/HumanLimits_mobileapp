@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/blueBackground">
 
     <TextView
         android:id="@+id/scoreViewMemory"
@@ -90,4 +91,10 @@
             android:backgroundTint="@color/greyButton"/>
 
     </GridLayout>
+
+    <Button
+        android:id="@+id/buttonPlayMemory"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/play"/>
 </LinearLayout>

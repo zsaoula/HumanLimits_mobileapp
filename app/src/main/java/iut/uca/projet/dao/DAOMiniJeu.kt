@@ -8,5 +8,5 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface DAOMiniJeu {
     @Query("SELECT * FROM minijeu")
-    fun getMiniJeux() : Flow<List<MiniJeuEntity>>
+    fun getMiniJeux() : List<MiniJeuEntity>
 }

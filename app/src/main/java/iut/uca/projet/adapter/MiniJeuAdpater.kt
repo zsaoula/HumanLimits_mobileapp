@@ -1,13 +1,10 @@
 package iut.uca.projet.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import iut.uca.projet.R
-import iut.uca.projet.fragment.FragmentMiniJeu
-import iut.uca.projet.model.*
 import iut.uca.projet.viewholder.MiniJeuViewHolder
 
 class MiniJeuAdpater(val jeux: List<String>) : RecyclerView.Adapter<MiniJeuViewHolder>() {
@@ -20,6 +17,9 @@ class MiniJeuAdpater(val jeux: List<String>) : RecyclerView.Adapter<MiniJeuViewH
         when (jeux[position]) {
             "BallGame" -> {
                 holder.buttonMiniJeu.text = "Ball Game"
+                holder.buttonMiniJeu.setOnClickListener {
+                    it.findNavController().navigate(R.id.fragmentBall)
+                }
             }
             //is BallGame -> holder.imageMiniJeu.setImageResource(R.drawable.target)
             //holder.imageMiniJeu

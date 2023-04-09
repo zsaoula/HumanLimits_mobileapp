@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet"
-        tools:targetApi="19">
+        tools:targetApi="19"
+        android:name=".application.MyApp">
         <activity
             android:name=".activities.StartActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/ApplicationTheme">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

@@ -1,0 +1,11 @@
+INSERT INTO minijeu (id, nom) VALUES (1, 'MemoryGame');
+INSERT INTO minijeu (id, nom) VALUES (2, 'TypingGame');
+INSERT INTO minijeu (id, nom) VALUES (3, 'BallGame');
+INSERT INTO minijeu (id, nom) VALUES (4, 'ReactionGame');
+
+INSERT INTO joueur (id, nom) VALUES (1, '');
+
+INSERT INTO score (joueurId, miniJeuId, score) VALUES (1, 1, 0);
+INSERT INTO score (joueurId, miniJeuId, score) VALUES (1, 2, 0);
+INSERT INTO score (joueurId, miniJeuId, score) VALUES (1, 3, 0);
+INSERT INTO score (joueurId, miniJeuId, score) VALUES (1, 4, 0);
